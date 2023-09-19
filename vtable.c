@@ -66,7 +66,7 @@ void derived_ctor(Derived* this, int x, int y) {
 }
 
 int main() {
-    Derived* derived = malloc(sizeof(Derived)); // Allocate memory for Derived
+    Derived* derived = malloc(sizeof(Derived));
 
     derived->base.vptr = malloc(sizeof(baseVTBL));
     derived->base.vptr->type_info = malloc(sizeof(TI));
